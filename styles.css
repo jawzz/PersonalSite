@@ -23,8 +23,7 @@ body {
 
 .hero-content {
     animation: fadeIn 3s ease-in;
-    padding: 20px;
-    border-radius: 10px;
+    padding: 0; /* Removed padding to remove the grey box effect */
 }
 
 /* Title Styling */
@@ -139,88 +138,4 @@ body {
     padding: 50px 20px;
 }
 
-.featured-item {
-    background: #222;
-    padding: 20px;
-    border-radius: 10px;
-    margin: 20px;
-    width: 45%;
-    transition: transform 0.3s;
-}
-
-.featured-item:hover {
-    transform: scale(1.05);
-}
-
-.featured-item img {
-    max-width: 100%;
-    border-radius: 10px;
-}
-
-/* Interactive Section */
-.interactive-spacex {
-    background: #000;
-    padding: 50px 20px;
-    text-align: center;
-}
-
-.spacex-button {
-    background: #ff4500;
-    color: #ffffff;
-    padding: 10px 20px;
-    border: none;
-    border-radius: 5px;
-    cursor: pointer;
-    transition: background 0.3s;
-    font-weight: bold;
-}
-
-.spacex-button:hover {
-    background: #ff6347;
-}
-
-/* Footer Styling */
-.footer-spacex {
-    background: #1b1b1b;
-    padding: 30px;
-    text-align: center;
-    color: #ffffff;
-    font-size: 0.9em;
-}
-
-/* Koan Text Surprise */
-.surprise-koan {
-    margin-top: 40px;
-    padding: 20px;
-    background: rgba(0, 0, 0, 0.8);
-    border-radius: 10px;
-    max-width: 600px;
-    margin-left: auto;
-    margin-right: auto;
-    cursor: pointer;
-}
-
-.surprise-koan:hover .koan-text {
-    color: #ff4500;
-    font-weight: bold;
-    transition: color 0.3s;
-}
-
-/* Media Queries for Responsive Design */
-@media (max-width: 768px) {
-    .hero-content {
-        padding: 10px;
-    }
-
-    .featured-item {
-        width: 100%;
-    }
-
-    .navbar-spacex ul {
-        flex-direction: column;
-    }
-
-    .navbar-spacex ul li {
-        margin: 10px 0;
-    }
-}
+.fe
