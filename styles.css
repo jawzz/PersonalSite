@@ -11,7 +11,7 @@ body {
 
 /* Hero Section */
 .hero-spacex {
-    background: url('https://github.com/jawzz/PersonalSite/blob/main/52210580092_aea1f452e7_z.jpg') no-repeat center center/cover;
+    background: url('52210580092_aea1f452e7_z.jpg') no-repeat center center/cover;
     height: 100vh;
     display: flex;
     align-items: center;
@@ -23,16 +23,15 @@ body {
 
 .hero-content {
     animation: fadeIn 3s ease-in;
-    background: rgba(0, 0, 0, 0.7);
     padding: 20px;
     border-radius: 10px;
 }
 
-/* Title Animation */
+/* Title Styling */
 .hero-content h1 {
     font-size: 4em;
     font-weight: bold;
-    color: #ff4500; /* Lava color */
+    color: #ffffff; /* Changed to white */
     animation: spinIn 2s ease-out;
 }
 
@@ -47,7 +46,7 @@ body {
     }
 }
 
-/* Quote Animation */
+/* Quote Styling */
 .hero-content p {
     font-size: 1.5em;
     margin-top: 20px;
@@ -65,6 +64,7 @@ body {
     }
 }
 
+/* Explore Button Styling with Delay */
 .cta-button {
     background: #ff4500; /* Lava color */
     color: #ffffff;
@@ -74,7 +74,18 @@ body {
     border-radius: 5px;
     text-decoration: none;
     font-weight: bold;
-    transition: background 0.3s;
+    transition: background 0.3s, opacity 1s ease-in-out;
+    opacity: 0;
+    animation: fadeInButton 5s forwards;
+}
+
+@keyframes fadeInButton {
+    0% {
+        opacity: 0;
+    }
+    100% {
+        opacity: 1;
+    }
 }
 
 .cta-button:hover {
