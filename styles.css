@@ -1,98 +1,177 @@
+/* General Body Styling */
 body {
     font-family: 'Roboto', sans-serif;
-    line-height: 1.6;
+    background-color: #000;
+    color: #ffffff;
     margin: 0;
     padding: 0;
-    background-color: #1a1a2e;
-    color: #e0e0e0;
+    line-height: 1.6;
+    overflow-x: hidden;
 }
 
-header.hero {
-    background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url('hero_background.jpg') no-repeat center center/cover;
-    height: 90vh;
+/* Hero Section */
+.hero-spacex {
+    background: url('hero_background.jpg') no-repeat center center/cover;
+    height: 100vh;
     display: flex;
-    justify-content: center;
     align-items: center;
-    color: #ffffff;
+    justify-content: center;
     text-align: center;
+    color: #ffffff;
+    position: relative;
 }
 
 .hero-content {
-    max-width: 800px;
+    background: rgba(0, 0, 0, 0.7);
+    padding: 20px;
+    border-radius: 10px;
 }
 
 .cta-button {
-    background: #ff4b5c;
+    background: #e50914;
     color: #ffffff;
-    padding: 15px 25px;
+    padding: 15px 30px;
+    border: none;
+    text-transform: uppercase;
+    border-radius: 5px;
     text-decoration: none;
-    border-radius: 25px;
-    font-size: 1.2em;
-    margin-top: 20px;
-    display: inline-block;
+    font-weight: bold;
     transition: background 0.3s;
 }
 
 .cta-button:hover {
-    background: #ff758f;
+    background: #ff6a6a;
 }
 
-nav.navbar {
-    background: #16213e;
-    padding: 10px;
-    text-align: center;
+/* Navigation Bar */
+.navbar-spacex {
+    background: #1b1b1b;
+    padding: 20px;
+    position: sticky;
+    top: 0;
+    z-index: 100;
 }
 
-nav.navbar ul {
+.navbar-spacex ul {
     list-style: none;
+    display: flex;
+    justify-content: center;
     padding: 0;
 }
 
-nav.navbar ul li {
-    display: inline;
-    margin-right: 20px;
+.navbar-spacex ul li {
+    margin: 0 15px;
 }
 
-nav.navbar ul li a {
-    color: #e0e0e0;
+.navbar-spacex ul li a {
+    color: #ffffff;
     text-decoration: none;
     font-size: 1.1em;
     transition: color 0.3s;
 }
 
-nav.navbar ul li a:hover {
-    color: #ff4b5c;
+.navbar-spacex ul li a:hover {
+    color: #e50914;
 }
 
-main {
-    padding: 40px;
+/* Parallax Section */
+.spacex-parallax {
+    background: url('parallax_background.jpg') fixed center center/cover;
+    padding: 80px 20px;
+    text-align: center;
 }
 
-.featured {
+/* Featured Section */
+.featured-spacex {
     display: flex;
+    flex-wrap: wrap;
     justify-content: space-around;
-    margin: 40px 0;
+    background: #111;
+    padding: 50px 20px;
 }
 
 .featured-item {
-    background: #1f4068;
+    background: #222;
     padding: 20px;
-    border-radius: 15px;
+    border-radius: 10px;
+    margin: 20px;
     width: 45%;
+    transition: transform 0.3s;
+}
+
+.featured-item:hover {
+    transform: scale(1.05);
+}
+
+.featured-item img {
+    max-width: 100%;
+    border-radius: 10px;
+}
+
+/* Interactive Section */
+.interactive-spacex {
+    background: #000;
+    padding: 50px 20px;
     text-align: center;
 }
 
-.interactive {
-    background: #0f3460;
-    padding: 40px;
+.spacex-button {
+    background: #e50914;
+    color: #ffffff;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background 0.3s;
+    font-weight: bold;
+}
+
+.spacex-button:hover {
+    background: #ff6a6a;
+}
+
+/* Footer Styling */
+.footer-spacex {
+    background: #1b1b1b;
+    padding: 30px;
+    text-align: center;
+    color: #ffffff;
+    font-size: 0.9em;
+}
+
+/* Koan Text Surprise */
+.surprise-koan {
     margin-top: 40px;
-    border-radius: 15px;
+    padding: 20px;
+    background: rgba(0, 0, 0, 0.8);
+    border-radius: 10px;
+    max-width: 600px;
+    margin-left: auto;
+    margin-right: auto;
+    cursor: pointer;
 }
 
-footer {
-    text-align: center;
-    padding: 20px;
-    background: #16213e;
-    color: #e0e0e0;
-    margin-top: 20px;
+.surprise-koan:hover .koan-text {
+    color: #e50914;
+    font-weight: bold;
+    transition: color 0.3s;
+}
+
+/* Media Queries for Responsive Design */
+@media (max-width: 768px) {
+    .hero-content {
+        padding: 10px;
+    }
+
+    .featured-item {
+        width: 100%;
+    }
+
+    .navbar-spacex ul {
+        flex-direction: column;
+    }
+
+    .navbar-spacex ul li {
+        margin: 10px 0;
+    }
 }
