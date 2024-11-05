@@ -3,36 +3,69 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Josh Fox - Intelligent Automation & Exploration</title>
+    <title>Josh Fox - Exploration, Mindfulness & Automation</title>
     <link rel="stylesheet" href="styles.css">
     <script src="script.js" defer></script>
 </head>
 <body>
-    <header>
-        <h1>Welcome to the World of Josh Fox</h1>
-        <nav>
-            <ul>
-                <li><a href="index.html">Home</a></li>
-                <li><a href="about.html">About Me</a></li>
-                <li><a href="projects.html">Projects</a></li>
-                <li><a href="cool_stuff.html">Cool Stuff</a></li>
-                <li><a href="automations.html">Automations</a></li>
-                <li><a href="books.html">Favorite Books</a></li>
-                <li><a href="favorites.html">Favorites</a></li>
-                <li><a href="contact.html">Contact</a></li>
-            </ul>
-        </nav>
+    <header class="hero">
+        <div class="hero-content">
+            <h1>Welcome to the World of Josh Fox</h1>
+            <p>Discover the intersection of intelligent automation, astrophysics, mindfulness, and more.</p>
+            <a href="#explore" class="cta-button">Explore Now</a>
+        </div>
     </header>
+
+    <nav class="navbar">
+        <ul>
+            <li><a href="index.html">Home</a></li>
+            <li><a href="about.html">About Me</a></li>
+            <li><a href="projects.html">Projects</a></li>
+            <li><a href="cool_stuff.html">Cool Stuff</a></li>
+            <li><a href="automations.html">Automations</a></li>
+            <li><a href="books.html">Favorite Books</a></li>
+            <li><a href="favorites.html">Favorites</a></li>
+            <li><a href="contact.html">Contact</a></li>
+        </ul>
+    </nav>
+
     <main>
-        <section>
+        <section id="explore" class="parallax">
             <h2>About This Site</h2>
-            <p>This site is a reflection of my passions, work, and curiosities. From intelligent automation to mindfulness, astrophysics, and my love for humanity, it's all here. Feel free to explore and discover something new!</p>
+            <p>Explore a collection of my passions, work, and curiosities. From intelligent automation to mindfulness, astrophysics, and my love for humanity, it's all here. Feel free to explore and discover something new!</p>
+            <div class="surprise-koan">
+                <p class="koan-text">The koan appears here... Hover to unveil the truth.</p>
+            </div>
         </section>
-        <section id="koan-surprise">
-            <h2 class="hidden-koan">The koan appears here...</h2>
-            <p>Hover in the right place to find it.</p>
+
+        <section class="featured">
+            <div class="featured-item">
+                <h3>Mindfulness & Meditation</h3>
+                <iframe width="560" height="315" src="https://www.youtube.com/embed/sample-video" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                <p>Embrace mindfulness with guided meditation and inspiring content.</p>
+            </div>
+            <div class="featured-item">
+                <h3>Astrophysics & The Cosmos</h3>
+                <img src="webb_space_image.jpg" alt="Webb Telescope">
+                <p>Discover the wonders of the universe, from the Webb Space Telescope imagery to the questions that drive our curiosity.</p>
+            </div>
+        </section>
+
+        <section class="interactive">
+            <h2>Interactive Projects & Tools</h2>
+            <div class="interactive-tool">
+                <h3>Automation Simulations</h3>
+                <button onclick="runAutomationDemo()">Run Demo</button>
+                <p>See how intelligent automation can transform workflows.</p>
+            </div>
+            <div class="interactive-tool">
+                <h3>Chat with JoshBot</h3>
+                <div id="chat-box"></div>
+                <button onclick="startChat()">Start Chat</button>
+            </div>
         </section>
     </main>
+
     <footer>
         <p>Created by Josh Fox - © 2024</p>
     </footer>
